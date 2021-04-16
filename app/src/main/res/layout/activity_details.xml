@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".details">
+
+    <Button
+        android:id="@+id/detailsBackBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Back"
+        android:background="@color/buttonColor"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/detailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detailsBackBtn"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:text="MY DETAILS"
+        android:textSize="20sp"/>
+
+    <ImageView
+    android:id="@+id/personIcon"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_below="@id/detailsText"
+    app:srcCompat="@drawable/person"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/personText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsText"
+        android:layout_toRightOf="@+id/personIcon"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginVertical="@android:dimen/app_icon_size"
+        android:text="Liesl Gounden-Wentzel"
+        android:textSize="15sp"/>
+
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/personIcon"
+        app:srcCompat="@drawable/phone"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personIcon"
+        android:layout_toRightOf="@+id/phoneIcon"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="083 619 0852"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/emailIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/phoneIcon"
+        app:srcCompat="@drawable/email"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneIcon"
+        android:layout_toRightOf="@+id/emailIcon"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="lieslgounden@gmail.com"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/facebookIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/emailIcon"
+        app:srcCompat="@drawable/facebook"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/fbText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailIcon"
+        android:layout_toRightOf="@+id/facebookIcon"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+
+        android:text="@string/facebook_link"
+        android:textSize="15sp"/>
+
+
+    <ImageView
+        android:id="@+id/instaIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/facebookIcon"
+        app:srcCompat="@drawable/insta"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/instaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebookIcon"
+        android:layout_toRightOf="@+id/instaIcon"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/insta_link"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/linkedinIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/instaIcon"
+        app:srcCompat="@drawable/linkdin"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/linkedinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instaIcon"
+        android:layout_toRightOf="@+id/linkedinIcon"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/linkedIn_link"
+        android:textSize="15sp"/>
+
+
+</RelativeLayout>

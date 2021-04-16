@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">LieslGoundenWentzel DevSpace</string>
+
+    <string name="scrolltext">My name is Liesl \nGounden-Wentzel and \nI am a wife and mother \nof 2 boys, Alex (6) and \nCallen (1).\n\n
+                            I consider myself a \nperfectionist in everything I do.\n\n
+
+                            I have a diploma in Multimedia Technology and have worked in the graphic design field
+                            but my passion lies with programming, especially JAVA.\n\n
+
+                            I have exceptional skills in Adobe Photoshop, Corel Draw, Python programming, JAVA and Android Development.\n\n
+
+                            My hobbies are Scuba diving and puzzles.\n\n
+
+                            In the future, I hope to be an accomplished programmer and a role model to anyone wanting to enter the field of IT.\n\n
+
+                            I am a team player and consider myself good within leadership roles.</string>
+
+
+    <string name="facebook_link">https://www.facebook.com/liesl.goundenwentzel</string>
+    <string name="insta_link">lgwentzel</string>
+    <string name="linkedIn_link">https://www.linkedin.com/in/liesl-gounden-wentzel-6b12b0164/</string>
+    <string name="liesl">never give up</string>
+    <string name="dear">Dear: </string>
+
+</resources>

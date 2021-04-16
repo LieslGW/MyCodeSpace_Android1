@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculation">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Back"
+        android:background="@color/buttonColor"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/calcText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/backBtn"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:text="    Calculate the\n Area of a Trapezoid."
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/calcInstructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_below="@id/calcText"
+        android:layout_marginTop="30dp"
+        android:text="Insert your measurements (in mm) according to the diagram shown on the right"/>
+
+    <TextView
+        android:id="@+id/measureA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calcInstructionText"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="A: "/>
+
+    <EditText
+        android:id="@+id/measureATB"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calcInstructionText"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/measureA"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/measureB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/measureA"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="B: "/>
+
+    <EditText
+        android:id="@+id/measureBTB"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/measureA"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/measureB"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/measureH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/measureB"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="H: "
+        />
+
+    <EditText
+        android:id="@+id/measureHTB"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/measureB"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/measureH"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/doCalcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/measureHTB"
+        android:layout_marginTop="50dp"
+        android:text=" Click to Calculate "
+        android:background="@color/buttonColor"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/calcResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/doCalcBtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/doCalcBtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/trapezoid"
+        android:layout_toRightOf="@id/measureATB"
+        android:layout_below="@id/calcInstructionText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-50dp"
+        android:contentDescription="@string/liesl"/>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/dearText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to my code space"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dearText"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="50dp">
+
+    <Button
+        android:id="@+id/HomeBtn"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:text="Home"
+        android:background="@color/buttonColor"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    <Button
+        android:id="@+id/CalcBtn"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="Calculation"
+        android:background="@color/buttonColor"
+        android:textColor="@color/white"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/AboutBtn"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="About Me"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnLayout"
+        android:layout_marginTop="20dp"
+        android:background="@color/buttonColor"
+        android:textColor="@color/white"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    <Button
+        android:id="@+id/ProfileBtn"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="My Dev Profile"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/AboutBtn"
+        android:layout_marginTop="20dp"
+        android:background="@color/buttonColor"
+        android:textColor="@color/white"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+</RelativeLayout>
